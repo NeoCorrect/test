@@ -27,7 +27,7 @@ socket.onopen = function() {
   
   mess.innerHTML = "Connection established.";
   
-  socket.send(JSON.stringify({"op": "subscribe", "args": ["futures/ticker:BTC-USD-190830"]}));
+  socket.send(JSON.stringify({"op": "subscribe", "args": ["spot/ticker:ETH-USDT"]}));
   
 };
 
